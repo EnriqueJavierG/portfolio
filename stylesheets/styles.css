@@ -1,0 +1,60 @@
+/* Desired Color for links: #C678DD */
+/* Color for Titles: #98C379  */
+/* Some Details: #61AFEF or #4D9CA8 */
+/* Background for full page: #282C34 */
+h3 {
+    color: #61AFEF ;
+}
+
+/* Group Selectors */
+h4 {
+    color:#98C379;
+}
+/* Class for highlighting */
+.highlight-info {
+    background-color: black;
+    color: #4D9CA8;
+}
+/* Pseudo Class Selector */
+section a:link, section a:visited {
+    text-decoration: none;
+    color: #4D9CA8;
+    margin-bottom: 2px;
+}
+section a:hover, section a:active {
+    text-decoration: none;
+    background-color: black;
+    color: #61AFEF;
+    margin-bottom: 2px;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #C678DD;
+}
+
+body {
+    background-color:#282C34;
+    color: whitesmoke;
+}
+
+
+/* section a:link, section a:visited {
+    text-decoration: none;
+    background-color: #61AFEF;
+    border: 1px solid #61AFEF;
+    color:whitesmoke;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+section a:hover, section a:active {
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid black;
+    color: #61AFEF;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 2px;
+} */
