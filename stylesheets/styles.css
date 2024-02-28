@@ -8,17 +8,17 @@ h3 {
 
 /* Group Selectors */
 h4 {
-    color:#98C379;
+    color:#61AFEF;
 }
 /* Class for highlighting */
 .highlight-info {
     background-color: black;
-    color: #4D9CA8;
+    color: #61AFEF;
 }
 /* Pseudo Class Selector */
 section a:link, section a:visited {
     text-decoration: none;
-    color: #4D9CA8;
+    color: #61AFEF;
     margin-bottom: 2px;
 }
 section a:hover, section a:active {
@@ -29,7 +29,7 @@ section a:hover, section a:active {
 }
 a:link, a:visited {
     text-decoration: none;
-    color: #C678DD;
+    color: #61AFEF;
 }
 
 body {
