@@ -18,6 +18,11 @@ h3 {
     display: grid;
     padding: 10px;
 }
+.grid-container-top {
+    display: grid;
+    padding: 30px;
+    margin-left: 30px ;
+}
 .grid-item {
     display: inline-block;
     padding: 20px;
