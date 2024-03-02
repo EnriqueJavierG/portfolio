@@ -2,10 +2,26 @@
 /* Color for Titles: #98C379  */
 /* Some Details: #61AFEF or #4D9CA8 */
 /* Background for full page: #282C34 */
+
+body {
+    background-color:#282C34;
+    color: whitesmoke;
+}
+div.box {
+    background-color: darkgrey;
+    border: 2px solid aliceblue;
+}
 h3 {
     color: #61AFEF ;
 }
-
+.grid-container {
+    display: grid;
+    padding: 10px;
+}
+.grid-item {
+    display: inline-block;
+    padding: 20px;
+}
 /* Group Selectors */
 h4 {
     color:#61AFEF;
@@ -14,6 +30,7 @@ h4 {
 .highlight-info {
     background-color: black;
     color: #61AFEF;
+    display: inline-block;
 }
 section {
     border: 2px solid aliceblue;
@@ -25,13 +42,7 @@ section {
     margin-bottom: 5px;
 }
 section.wide {
-    border: 2px solid aliceblue;
-    border-radius: 15px 50px;
-    background: dimgrey;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    width: 800px;
+    width: 50%;
 }
 /* Pseudo Class Selector */
 section a:link, section a:visited {
@@ -49,12 +60,6 @@ a:link, a:visited {
     text-decoration: none;
     color: #61AFEF;
 }
-
-body {
-    background-color:#282C34;
-    color: whitesmoke;
-}
-
 
 /* section a:link, section a:visited {
     text-decoration: none;
