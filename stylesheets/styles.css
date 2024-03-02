@@ -34,7 +34,7 @@ h4 {
 }
 section {
     border: 2px solid aliceblue;
-    border-radius: 15px 50px;
+    border-radius: 15px;
     background: dimgrey;
     width: 200px;
     padding-left: 10px;
