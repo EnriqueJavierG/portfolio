@@ -17,11 +17,14 @@ h3 {
 .grid-container {
     display: grid;
     padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+
 }
 .grid-container-top {
     display: grid;
-    padding: 30px;
-    margin-left: 30px ;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .grid-item {
     display: inline-block;
@@ -47,7 +50,7 @@ section {
     margin-bottom: 5px;
 }
 section.wide {
-    width: 50%;
+    width: 100%;
 }
 /* Pseudo Class Selector */
 section a:link, section a:visited {
