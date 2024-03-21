@@ -68,6 +68,10 @@ a:link, a:visited {
     text-decoration: none;
     color: #61AFEF;
 }
+table, th, td {
+    border: 1px solid aliceblue;
+    border-collapse: collapse;
+    }
 
 /* section a:link, section a:visited {
     text-decoration: none;
