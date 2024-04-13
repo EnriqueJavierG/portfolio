@@ -4,127 +4,138 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get to know me</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="stylesheets/styles.css"> -->
 </head>
 
 <body>
-    <div class="grid-container-top" >
-        <section class="wide">
-            <h1>Welcome to Enrique Javier's Portfolio!</h1>
-            <h2>Thanks for taking the time to explore my page! </h2>
-            <h3>Here I showcase projects that I have created + Insights into different areas of interest</h3>
-            <h3>Projects are divided in software, hardware and ai sections - WIP</h3>
+    <!-- <nav class="navbar ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="about_me/resume.html">Resume</a>
+            </div>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_me/resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <section class="container-fluid text-center px-4 ">
+            <h4>Welcome to Enrique Javier's Portfolio!</h4>
+            <h4>Thanks for taking the time to explore my page! </h4>
+            <h4>Here I showcase projects that I have created + Insights into different areas of interest</h4>
+            <h4>Projects are divided in software, hardware and ai sections - WIP</h4>
         </section>
     </div>
-    
-    <div class="grid-container" >
-        <ul >
-            <li class="grid-item">
-                <section>
-                    <h4>Software Section</h4>
-                    <ul>
-                        <a href="software/software-projects.html"><li><article>Projects</article></li></a>
-                        <a href="software/software-classes.html"><li><article>Classes and Tutorials</article></li></a>
-                    </ul>
+    <div class="container-fluid text-center px-4">
+        <div class="row gx-5"> 
+            <div class="col-md-4"> 
+                <section class="card bg-light">
+                    <h4>Software</h4>
+                        <a href="software/software-projects.html"><article>Projects</article></a>
+                        <a href="software/software-classes.html"><article>Classes and Tutorials</article></a>
                 </section>
-            </li>
-            <li class="grid-item">
-                <section>
-                    <h4>Hardware Section</h4>
-                    <ul>
-                        <a href="hardware/hardware-projects.html"><li><article>Projects</article></li></a>
-                        <li><article>Classes and Tutorials</article></li>
-                    </ul>
+            </div>
+            <div class="col-md-4"> 
+                <section class="card bg-light">
+                    <h4>Hardware </h4>
+
+                        <a href="hardware/hardware-projects.html"><article>Projects</article></a>
+                        <article>Classes and Tutorials</article>
+
                 </section>
-            </li>
-            <li class="grid-item">
-                <section>
-                    <h4>AI and Robotics Section</h4>
-                    <ul>
-                        <li><article>Projects</article></li>
-                        <li><article>Classes and Tutorials</article></li>
-                    </ul>
+            </div>
+            <div class="col-md-4"> 
+                <section class="card bg-light">
+                    <h4>AI and Robotics </h4>
+                        <article>Projects</article></li>
+                        <article>Classes and Tutorials</article>
                 </section>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
-    <div style="    
-        display: grid;
-        margin-left: 20%;
-        margin-right: 20%;">
-        <object data="Enrique_J._Gonzalez_Mendez_Resume_2024.pdf" type="application/pdf" width="100%" height="500px">
-            <p>Unable to display PDF file. <a href="Enrique_J._Gonzalez_Mendez_Resume_2024.pdf">Download</a> instead.</p>
-        </object>
-    </div>
-    <div style="    
-    display: grid;
-    margin-left: 20%;
-    margin-right: 20%;">
+
+    <section>
+    <!-- Master Courses  -->
+    <div class="table-responsive px-4">
         <p>Graduate courses that I have taken or planning to take as part of my studies</p>
-        <table style="width:100%">
+        <table class="table table-hover">
             <tr>
                 <th>Class</th>
-                <th>Description</th>
                 <th>Status</th>
             </tr>
             <tr>
                 <td>Big Data Analytics</td>
-                <td></td>
                 <td>Completed</td>
             </tr>
             <tr>
                 <td>Computer Vision</td>
-                <td></td>
                 <td>Completed</td>
             </tr>
             <tr>
                 <td>Complex Analysis</td>
-                <td></td>
                 <td>In Progress</td>
             </tr>
             <tr>
                 <td>Algorithms for Data Science</td>
-                <td></td>
                 <td>Planned</td>
             </tr>
             <tr>
                 <td>Applied Machine Learning</td>
-                <td></td>
                 <td>Planned</td>
             </tr>
             <tr>
                 <td>Creating AI-Enabled Systems</td>
-                <td></td>
                 <td>Planned</td>
             </tr>
             <tr>
                 <td>Artificial Intelligence</td>
-                <td></td>
                 <td>Planned</td>
             </tr>
             <tr>
                 <td>Introduction to GPU Programming</td>
-                <td></td>
                 <td>Planned</td>
             </tr>
             <tr>
                 <td>Data Visualization</td>
-                <td></td>
                 <td>Planned</td>
             </tr>
             <tr>
                 <td>Advance Machine Learning</td>
-                <td></td>
                 <td>Planned</td>
             </tr>
             <tr>
                 <td>Evolutionary and Swarm Intelligence</td>
-                <td></td>
                 <td>Planned</td>
             </tr>
         </table>
     </div>
     <aside class="highlight-info">This page is still under construction </aside>
+
+
+    <!-- BOOTSTRAP Scripts -->
+    <script src="stylesheets/js/bootstrap.bundle.js"></script>
+    <script src="stylesheets/js/bootstrap.min.js"></script>
+    <!-- <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script> -->
 </body>
 
 <footer>
