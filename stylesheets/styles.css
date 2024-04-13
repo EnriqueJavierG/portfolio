@@ -3,10 +3,34 @@
 /* Some Details: #61AFEF or #4D9CA8 */
 /* Background for full page: #282C34 */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Styles */
+
 body {
     background-color:#282C34;
     color: whitesmoke;
+    font-family: 'Courier New', monospace;
 }
+
+/* Media Queries */
+
+/* Large Devices */
+@media (min-width: 1200px) {
+    
+}
+
+/* Medium Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+
+
 div.box {
     background-color: darkgrey;
     border: 2px solid aliceblue;
@@ -64,6 +88,14 @@ section a:hover, section a:active {
     color: #61AFEF;
     margin-bottom: 2px;
 }
+
+section.smooth-box{
+    border: #61AFEF solid;
+    border-radius: 10px;
+    width: 33%;
+
+}
+
 a:link, a:visited {
     text-decoration: none;
     color: #61AFEF;
