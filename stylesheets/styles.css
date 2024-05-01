@@ -1,127 +1,13 @@
-/* Desired Color for links: #C678DD */
-/* Color for Titles: #98C379  */
-/* Some Details: #61AFEF or #4D9CA8 */
-/* Background for full page: #282C34 */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Base Styles */
-
 body {
-    background-color:#282C34;
-    color: whitesmoke;
-    font-family: 'Courier New', monospace;
-}
+    background-color: #ECEFF1;
+    font-family: 'Times New Roman', Times, serif;
+}  
 
-/* Media Queries */
-
-/* Large Devices */
-@media (min-width: 1200px) {
+#header-nav {
+    background-color: deepskyblue;
     
 }
 
-/* Medium Devices */
-@media (min-width: 992px) and (max-width: 1199px) {
-    
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border:1px white;
 }
-
-
-
-div.box {
-    background-color: darkgrey;
-    border: 2px solid aliceblue;
-}
-h3 {
-    color: #61AFEF ;
-}
-.grid-container {
-    display: grid;
-    padding: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-
-}
-.grid-container-top {
-    display: grid;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.grid-item {
-    display: inline-block;
-    padding: 20px;
-}
-/* Group Selectors */
-h4 {
-    color:#61AFEF;
-}
-/* Class for highlighting */
-.highlight-info {
-    background-color: black;
-    color: #61AFEF;
-    display: inline-block;
-}
-section {
-    border: 2px solid aliceblue;
-    border-radius: 15px;
-    background: dimgrey;
-    width: 200px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-}
-section.wide {
-    width: 100%;
-}
-/* Pseudo Class Selector */
-section a:link, section a:visited {
-    text-decoration: none;
-    color: #61AFEF;
-    margin-bottom: 2px;
-}
-section a:hover, section a:active {
-    text-decoration: none;
-    background-color: black;
-    color: #61AFEF;
-    margin-bottom: 2px;
-}
-
-section.smooth-box{
-    border: #61AFEF solid;
-    border-radius: 10px;
-    width: 33%;
-
-}
-
-a:link, a:visited {
-    text-decoration: none;
-    color: #61AFEF;
-}
-table, th, td {
-    border: 1px solid aliceblue;
-    border-collapse: collapse;
-    }
-
-/* section a:link, section a:visited {
-    text-decoration: none;
-    background-color: #61AFEF;
-    border: 1px solid #61AFEF;
-    color:whitesmoke;
-    display: block;
-    width: 200px;
-    text-align: center;
-    margin-bottom: 2px;
-}
-section a:hover, section a:active {
-    text-decoration: none;
-    background-color: black;
-    border: 1px solid black;
-    color: #61AFEF;
-    display: block;
-    width: 200px;
-    text-align: center;
-    margin-bottom: 2px;
-} */
