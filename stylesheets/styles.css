@@ -21,10 +21,19 @@ body {
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(to right,
             rgb(167, 225, 235),
-            rgb(197, 185, 248));
+            rgb(197, 185, 248, 1));
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right,
             rgb(167, 225, 235),
-            rgb(197, 185, 248));
+            rgb(197, 185, 248, 1));
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(27, 68, 250);
 }
