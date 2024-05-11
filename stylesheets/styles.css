@@ -27,7 +27,23 @@ body {
     background: linear-gradient(to right,
             rgb(167, 225, 235),
             rgb(197, 185, 248, 1));
+    
 }
+
+html {
+    /* fallback for old browsers */
+    background: #a7e3eb;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right,
+            rgb(167, 225, 235),
+            rgb(197, 185, 248, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,
+            rgb(167, 225, 235),
+            rgb(197, 185, 248, 1));
+        }
 
 a:hover {
     cursor: pointer;
@@ -36,4 +52,10 @@ a:hover {
 a:link, a:visited {
     text-decoration: none;
     color: rgb(27, 68, 250);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
 }
