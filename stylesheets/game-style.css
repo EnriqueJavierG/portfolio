@@ -1,0 +1,104 @@
+
+body {
+    background-color: #000000; /* Neutral gray */
+    color: #F0F3F0;
+}
+
+/* Card Styles */
+
+.card { 
+    background-color: #1F1F1F;
+    color: #F0F3F0; 
+}
+.card-hardware {
+    border: 3px solid #6A95E1; /* Nintendo Blue */
+}
+.card-hardware:hover {
+    background-color: #506AB6;
+    color: white;
+}
+
+.card-ai {
+    border: 3px solid #9889E3; /* Nintendo Green */
+}
+.card-ai:hover {
+    background-color: #6E66A8;;
+    color: white;
+}
+
+.card-software {
+    border: 3px solid #E27674; /* Nintendo Red */
+}
+.card-software:hover {
+    background-color: #A7544C;
+    color: white;
+}
+
+/* Button Style */
+.btn-gamified {
+    background-color: #DDE07C; /* Nintendo Yellow */
+    color: black;
+}
+.btn-gamified:hover {
+    background-color: #9889E3;
+    color: white;
+}
+/* Button Styles */
+.btn-hardware {
+    background-color: #6A95E1; /* Nintendo Blue */
+    color: white;
+    box-shadow: 0 4px #506AB6; /* Darker shadow of the same color */
+    border: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+.btn-hardware:hover {
+    background-color: #6A95E1; /* Nintendo Blue */
+    color: white;/* Slightly darker on hover */
+    transform: translateY(2px);
+}
+.btn-hardware:active {
+    background-color: #6A95E1 !important; /* Force shadow color on click */
+    box-shadow: 0 2px #6E66A8; /* Shadow disappears */
+    transform: translateY(4px); /* Move down to cover shadow */
+}
+
+.btn-ai {
+    background-color: #9889E3; /* Nintendo Purple */
+    color: white;
+    box-shadow: 0 4px #6E66A8; /* Darker shadow of the same color */
+    border: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+.btn-ai:hover {
+    background-color: #9889E3; /* Nintendo Purple */
+    color: white;
+    transform: translateY(2px);/* Slightly darker on hover */
+}
+.btn-ai:active {
+    background-color: #9889E3 !important; /* Force shadow color on click */
+    box-shadow: 0 2px #6E66A8; /* Shadow disappears */
+    transform: translateY(4px); /* Move down to cover shadow */
+}
+
+.btn-software {
+    background-color: #E27674; /* Nintendo Red */
+    color: white;
+    box-shadow: 0 4px #A7544C; /* Darker shadow of the same color */
+    border: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+.btn-software:hover {
+    background-color: #E27674; /* Slightly darker on hover */
+    color: white;
+    transform: translateY(2px);
+}
+.btn-software:active {
+    background-color: #E27674 !important; /* Force shadow color on click */
+    box-shadow: 0 2px #A7544C; /* Shadow disappears */
+    transform: translateY(4px); /* Move down to cover shadow */
+}
+
+/* #94DF84 <- Green*/

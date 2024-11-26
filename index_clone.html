@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+
+<body class="gradient-custom-5">
+    <nav id="header-nav" class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a class="nav-link  text-light active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about_me/experiences-timeline.html">My Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about_me/recognition-wall.html">Recognitions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Scrollable Cards Section -->
+<div id="scrollable-cards" class="container-fluid text-center px-4 gradient-custom-5">
+    <!-- Scroll navigation buttons -->
+
+    <div class="scroll-container">
+        <div class="card bg-light">
+            <h4>Software</h4>
+            <a href="software/software-projects.html">
+                <article>Projects</article>
+            </a>
+            <a href="software/software-classes.html">
+                <article>Topics</article>
+            </a>
+            <article>Books</article>
+        </div>
+        <div class="card bg-light">
+            <h4>Hardware</h4>
+            <a href="hardware/hardware-projects.html">
+                <article>Projects</article>
+            </a>
+            <article>Topics</article>
+            <article>Books</article>
+        </div>
+        <div class="card bg-light">
+            <h4>AI</h4>
+            <article>Projects</article>
+            <a href="ai/ai-hub.html">
+                <article>Topics</article>
+            </a>
+            <article>Books</article>
+        </div>
+        <div class="card bg-light">
+            <h4>Robotics</h4>
+            <article>Projects</article>
+            <article>Topics</article>
+            <article>Books</article>
+        </div>
+        <div class="card bg-light">
+            <h4>Electronics</h4>
+            <article>Tools</article>
+            <article>Tips</article>
+            <article>Books</article>
+        </div>
+        <div class="card bg-light">
+            <h4>Quantum Computing</h4>
+            <article>Projects</article>
+            <article>Topics</article>
+            <article>Books</article>
+        </div>
+        <div class="card bg-light">
+            <h4>Statistics</h4>
+            <article>Tools</article>
+            <article>Tips</article>
+            <article>Books</article>
+        </div>
+        <div class="card bg-light">
+            <h4>Psychology</h4>
+            <article>Topics</article>
+            <article>Studies</article>
+            <article>Books</article>
+        </div>
+        <div class="card bg-light">
+            <h4>Productivity</h4>
+            <article>Tools</article>
+            <article>Tips</article>
+            <article>Books</article>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+
+    <aside class="highlight-info gradient-custom-5">This page is still under construction </aside>
+
+    <!-- JavaScript goes here -->
+    <script>
+        // JavaScript for scrolling functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            const scrollContainer = document.querySelector('.scroll-container');
+            const scrollLeft = document.getElementById('scroll-left');
+            const scrollRight = document.getElementById('scroll-right');
+
+            // Intersection Observer for fade-in and slide-in effects
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Card is entering the viewport
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    } else {
+                        // Card is leaving the viewport
+                        const viewportWidth = window.innerWidth;
+                        const cardRect = entry.target.getBoundingClientRect();
+
+                        if (cardRect.right < 0) {
+                            // Card is exiting to the left
+                            entry.target.style.opacity = '0';
+                            entry.target.style.transform = 'translateX(-50px)';
+                        } else if (cardRect.left > viewportWidth) {
+                            // Card is exiting to the right
+                            entry.target.style.opacity = '0';
+                            entry.target.style.transform = 'translateX(50px)';
+                        }
+                    }
+                });
+            }, { threshold: 0.50 });
+
+            cards.forEach(card => observer.observe(card));
+
+            // Scroll buttons functionality
+            scrollLeft.addEventListener('click', () => {
+                scrollContainer.scrollBy({
+                    left: -300, // Adjust based on card size
+                    behavior: 'smooth',
+                });
+            });
+
+            scrollRight.addEventListener('click', () => {
+                scrollContainer.scrollBy({
+                    left: 300, // Adjust based on card size
+                    behavior: 'smooth',
+                });
+            });
+        });
+    </script>
+    <!-- BOOTSTRAP Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-wh/1cUhcjKci4CNu1N3JD2yISp5IgmO5BawdyN1W5Vjqjzsk6lyq4u+yReR+g5uo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-sFqhA2JEVb2gtWgvE54bbNsXJGOSJp1ybM/XOg6wfnWvZG3n8n6UKUE3FQGWiBRL" crossorigin="anonymous"></script>
+    <!-- <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script> -->
+</body>
+
+<footer class="gradient-custom-5">
+    
+    <div class="gradient-custom-5">
+        <a href="https://www.linkedin.com/in/enrique-javier-gonzalez-mendez/" target="_blank"><i
+                class="bi bi-linkedin h3"></i></a>
+        <a href="https://github.com/EnriqueJavierG" target="_blank"><i class="bi bi-github h3 text-dark"></i></a>
+    </div>
+    Enrique Gonzalez &copy; Copyright 2024
+</footer>
+
+</html>
