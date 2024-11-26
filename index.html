@@ -8,6 +8,33 @@
     <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <style>
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none; /* Hides scrollbar for Firefox */
+            -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
+            scroll-behavior: smooth; /* Smooth scrolling */
+            gap: 16px; /* Space between cards */
+            padding: 20px; /* Optional padding */
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            display: none; /* Hides scrollbar for WebKit browsers */
+        }
+
+        .card {
+            flex: 0 0 300px; /* Fixes card width for horizontal scrolling */
+            height: 200px; /* Adjust as needed */
+            background: #f8f9fa; /* Bootstrap light background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 16px;
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation */
+            opacity: 0; /* Initially hidden */
+            transform: translateX(50px); /* Start off-screen */
+        }
+    </style>
 </head>
 
 <body class="gradient-custom-5">
