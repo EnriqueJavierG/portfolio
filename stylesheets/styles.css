@@ -85,3 +85,25 @@ a:link, a:visited {
     opacity: 0; /* Initially hidden */
     transform: translateX(50px); /* Start off-screen */
 }
+
+.scroll-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#scroll-left {
+    left: 10px;
+}
+
+#scroll-right {
+    right: 10px;
+}
