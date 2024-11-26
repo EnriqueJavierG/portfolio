@@ -113,42 +113,55 @@
 
     <!-- JavaScript goes here -->
     <script>
+        // JavaScript for scrolling functionality
         document.addEventListener('DOMContentLoaded', () => {
             const cards = document.querySelectorAll('.card');
+            const scrollContainer = document.querySelector('.scroll-container');
+            const scrollLeft = document.getElementById('scroll-left');
+            const scrollRight = document.getElementById('scroll-right');
 
+            // Intersection Observer for fade-in and slide-in effects
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         // Card is entering the viewport
                         entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateX(0)'; // Slide into view
+                        entry.target.style.transform = 'translateX(0)';
                     } else {
                         // Card is leaving the viewport
-                        entry.target.style.opacity = '0';
-                        entry.target.style.transform = 'translateX(50px)'; // Slide out of view
+                        const viewportWidth = window.innerWidth;
+                        const cardRect = entry.target.getBoundingClientRect();
+
+                        if (cardRect.right < 0) {
+                            // Card is exiting to the left
+                            entry.target.style.opacity = '0';
+                            entry.target.style.transform = 'translateX(-50px)';
+                        } else if (cardRect.left > viewportWidth) {
+                            // Card is exiting to the right
+                            entry.target.style.opacity = '0';
+                            entry.target.style.transform = 'translateX(50px)';
+                        }
                     }
                 });
-            }, { threshold: 0.6 });
+            }, { threshold: 0.50 });
 
             cards.forEach(card => observer.observe(card));
-        });
 
-    </script>
-    <script>
-        document.getElementById('scroll-left').addEventListener('click', () => {
-            document.querySelector('.scroll-container').scrollBy({
-                left: -300, // Adjust based on card size
-                behavior: 'smooth'
+            // Scroll buttons functionality
+            scrollLeft.addEventListener('click', () => {
+                scrollContainer.scrollBy({
+                    left: -300, // Adjust based on card size
+                    behavior: 'smooth',
+                });
+            });
+
+            scrollRight.addEventListener('click', () => {
+                scrollContainer.scrollBy({
+                    left: 300, // Adjust based on card size
+                    behavior: 'smooth',
+                });
             });
         });
-
-        document.getElementById('scroll-right').addEventListener('click', () => {
-            document.querySelector('.scroll-container').scrollBy({
-                left: 300, // Adjust based on card size
-                behavior: 'smooth'
-            });
-        });
-
     </script>
     <!-- BOOTSTRAP Scripts -->
     <script src="stylesheets/js/bootstrap.bundle.js"></script>
