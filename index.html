@@ -109,24 +109,35 @@
     <!-- JavaScript goes here -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.card');
+        const cards = document.querySelectorAll('.card');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Card is entering the viewport
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateX(0)'; // Slide into view
-            } else {
-                // Card is leaving the viewport
-                entry.target.style.opacity = '0';
-                entry.target.style.transform = 'translateX(50px)'; // Slide out of view
-            }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Card is entering the viewport
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateX(0)'; // Slide into view
+                } else {
+                    // Card is leaving the viewport
+                    const viewportWidth = window.innerWidth;
+                    const cardRect = entry.target.getBoundingClientRect();
+
+                    if (cardRect.right < 0) {
+                        // Card is exiting to the left
+                        entry.target.style.opacity = '0';
+                        entry.target.style.transform = 'translateX(-50px)';
+                    } else if (cardRect.left > viewportWidth) {
+                        // Card is exiting to the right
+                        entry.target.style.opacity = '0';
+                        entry.target.style.transform = 'translateX(50px)';
+                    }
+                }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.25 });
 
     cards.forEach(card => observer.observe(card));
 });
+
     </script>
     <!-- BOOTSTRAP Scripts -->
     <script src="stylesheets/js/bootstrap.bundle.js"></script>
