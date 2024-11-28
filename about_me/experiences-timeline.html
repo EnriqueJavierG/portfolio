@@ -13,19 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../stylesheets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../stylesheets/styles.css">
-    <style>
-        .skill-button {
-            display: inline-block;
-            padding: 0.4em 0.8em;
-            margin: 0.2em;
-            border-radius: 20px;
-            background-color: rgb(102, 193, 236);
-            font-size: 14px;
-            text-align: center;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="../stylesheets/game-style.css">
 </head>
 
 <body class="gradient-custom-5">
@@ -41,13 +29,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link text-light" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light active" href="../about_me/experiences-timeline.html">My Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="../about_me/recognition-wall.html">Recognitions</a>
+                            <a class="nav-link text-light" href="../about_me/recognition-wall.html">Recognitions</a>
                         </li>
                     </ul>
                 </div>
@@ -60,37 +48,42 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3 class="mb-4">Academic Experience Timeline</h3>
-                    <div class="card mb-4">
+                    <div class="card mb-4 card-hardware">
                         <div class="card-body">
                             <div class="d-flex align-items-start">
-                                <i class="fa fa-university fa-2x me-3"></i>
+                                <i class="fa fa-university fa-2x me-3 skill-icon-hardware"></i>
                                 <div>
                                     <h5 class="card-title">Bachelor in Computer Engineering</h5>
-                                    <p class="small text-muted"><i class="fa fa-clock me-1"></i>Fall 2014</p>
+                                    <p class="small text-light"><i class="fa fa-clock me-1"></i>Fall 2014</p>
                                     <p class="card-text">Got accepted into a 5-year Computer Engineering program at UPRM.</p>
                                     <p class="card-text"><strong>Skills Gained:</strong></p>
-                                    <span class="skill-button">Computer Vision</span>
-                                    <span class="skill-button">Big Data Analytics</span>
-                                    <span class="skill-button">Computer Architecture</span>
-                                    <span class="skill-button">Embedded Systems</span>
-                                    <span class="skill-button">Digital Electronics and Circuit Design</span>
+                                    <button class="skill-button ai">Computer Vision</button>
+                                    <span class="skill-button ai">Big Data Analytics</span>
+                                    <span class="skill-button hardware">Computer Architecture</span>
+                                    <span class="skill-button hardware">Embedded Systems</span>
+                                    <span class="skill-button hardware">Digital Electronics and Circuit Design</span>
+                                    <span class="skill-button software">Software Engineering</span>
+                                    <span class="skill-button software">Data Structures and Algorithms</span>
+                                    <span class="skill-button software">Java OOP</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4 card-ai">
                         <div class="card-body">
                             <div class="d-flex align-items-start">
-                                <i class="fa fa-graduation-cap fa-2x me-3"></i>
+                                <i class="fa fa-graduation-cap fa-2x me-3 skill-icon-ai"></i>
                                 <div>
                                     <h5 class="card-title">Master's in Artificial Intelligence </h5>
-                                    <p class="small text-muted"><i class="fa fa-clock me-1"></i>Spring 2024</p>
+                                    <p class="small text-light"><i class="fa fa-clock me-1"></i>Spring 2024</p>
                                     <p class="card-text">Accepted into the AI program at Johns Hopkins University.</p>
                                     <p class="card-text"><strong>Skills Gained:</strong></p>
-                                    <span class="skill-button">Applied Machine Learning</span>
-                                    <span class="skill-button">State Space Search Algorithms</span>
-                                    <span class="skill-button">PyTorch</span>
-                                    <span class="skill-button">Optimization Techniques</span>
+                                    <span class="skill-button ai">Applied Machine Learning</span>
+                                    <span class="skill-button ai">State Space Search Algorithms</span>
+                                    <span class="skill-button ai">PyTorch</span>
+                                    <span class="skill-button ai">Optimization Techniques</span>
+                                    <span class="skill-button hardware">Advance Computer Architecture</span>
+                                    <span class="skill-button software">Data Science Algorithms</span>
                                 </div>
                             </div>
                         </div>
@@ -98,86 +91,86 @@
                 </div>
                 <div class="col-md-6">
                     <h3 class="mb-4">Job Experience Timeline</h3>
-                    <div class="card mb-4">
+                    <div class="card mb-4  card-software">
                         <div class="card-body">
                             <div class="d-flex align-items-start">
-                                <i class="fa fa-briefcase fa-2x me-3"></i>
+                                <i class="fa fa-briefcase fa-2x me-3 skill-icon-software"></i>
                                 <div>
                                     <h5 class="card-title">Lab Assistant</h5>
-                                    <p class="small text-muted"><i class="fa fa-clock me-1"></i>Fall 2018 - Spring 2019</p>
+                                    <p class="small text-light"><i class="fa fa-clock me-1"></i>Fall 2018 - Spring 2019</p>
                                     <p class="card-text">Became a lab assistant for the advanced programming class. Responsible for administering exams, creating subject reviews for students, class projects, and helping the whole class understand OOP concepts during lab hours.</p>
                                     <p class="card-text"><strong>Skills/Tools Used:</strong></p>
-                                    <span class="skill-button">Teaching</span>
-                                    <span class="skill-button">Game Development</span>
-                                    <span class="skill-button">Object Oriented Programming</span>
-                                    <span class="skill-button">Java Programming</span>
+                                    <span class="skill-button all-areas">Teaching</span>
+                                    <span class="skill-button software">Game Development</span>
+                                    <span class="skill-button software">Object Oriented Programming</span>
+                                    <span class="skill-button software">Java Programming</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4 card-software">
                         <div class="card-body">
                             <div class="d-flex align-items-start">
-                                <i class="fa fa-industry fa-2x me-3"></i>
+                                <i class="fa fa-industry fa-2x me-3 skill-icon-software"></i>
                                 <div>
                                     <h5 class="card-title">IT Engineer at ABB</h5>
-                                    <p class="small text-muted"><i class="fa fa-clock me-1"></i>Spring 2019</p>
+                                    <p class="small text-light"><i class="fa fa-clock me-1"></i>Spring 2019</p>
                                     <p class="card-text">Was hired by ABB for 5 months. Created an asset tracking app that gives visibility to $90k worth of inventory.</p>
                                     <p class="card-text"><strong>Skills/Tools Used:</strong></p>
-                                    <span class="skill-button">ASP.NET</span>
-                                    <span class="skill-button">C# Programming</span>
-                                    <span class="skill-button">Microsoft SQL Server</span>
+                                    <span class="skill-button software">ASP.NET</span>
+                                    <span class="skill-button software">C# Programming</span>
+                                    <span class="skill-button software">Microsoft SQL Server</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4">
-                        <div class="card-body">
+                    <div class="card mb-4 card-ai">
+                        <div class="card-body ">
                             <div class="d-flex align-items-start">
-                                <i class="fa fa-flask fa-2x me-3"></i>
+                                <i class="fa fa-flask fa-2x me-3 skill-icon-ai"></i>
                                 <div>
                                     <h5 class="card-title">Research Intern at ERDC</h5>
-                                    <p class="small text-muted"><i class="fa fa-clock me-1"></i>Summer 2019</p>
+                                    <p class="small text-light"><i class="fa fa-clock me-1"></i>Summer 2019</p>
                                     <p class="card-text">Researched on Generative Adversarial Networks (GANs) and performed performance analysis for 4 different GANs.</p>
                                     <p class="card-text"><strong>Skills/Tools Used:</strong></p>
-                                    <span class="skill-button">Scientific Research</span>
-                                    <span class="skill-button">Generative Adversarial Network</span>
-                                    <span class="skill-button">Deep Learning</span>
+                                    <span class="skill-button all-areas">Scientific Research</span>
+                                    <span class="skill-button ai">Generative Adversarial Network</span>
+                                    <span class="skill-button ai">Deep Learning</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4 card-software">
                         <div class="card-body">
                             <div class="d-flex align-items-start">
-                                <i class="fa fa-shield fa-2x me-3"></i>
+                                <i class="fa fa-shield fa-2x me-3 skill-icon-software"></i>
                                 <div>
                                     <h5 class="card-title">Data Engineer at BioSecurity Office</h5>
-                                    <p class="small text-muted"><i class="fa fa-clock me-1"></i>Summer - Fall 2020</p>
+                                    <p class="small text-light"><i class="fa fa-clock me-1"></i>Summer - Fall 2020</p>
                                     <p class="card-text">Worked on the BioPortal app as a contractor. BioPortal tracks all Covid-19 test results from every hospital, laboratory, or clinic in Puerto Rico.</p>
                                     <p class="card-text"><strong>Skills/Tools Used:</strong></p>
-                                    <span class="skill-button">SQL</span>
-                                    <span class="skill-button">Angular</span>
-                                    <span class="skill-button">ASP.NET with Entity Framework</span>
+                                    <span class="skill-button software">SQL</span>
+                                    <span class="skill-button software">Angular</span>
+                                    <span class="skill-button software">ASP.NET with Entity Framework</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-4">
+                    <div class="card mb-4 card-hardware">
                         <div class="card-body">
                             <div class="d-flex align-items-start">
-                                <i class="fa fa-microchip fa-2x me-3"></i>
+                                <i class="fa fa-microchip fa-2x me-3 skill-icon-hardware"></i>
                                 <div>
                                     <h5 class="card-title">SoC Design Engineer at Intel</h5>
-                                    <p class="small text-muted"><i class="fa fa-clock me-1"></i>Spring 2021 - Present</p>
+                                    <p class="small text-light"><i class="fa fa-clock me-1"></i>Spring 2021 - Present</p>
                                     <p class="card-text">Started working on the global clock design for client computing products.</p>
                                     <p class="card-text"><strong>Skills/Tools Used:</strong></p>
-                                    <span class="skill-button">Physical Design</span>
-                                    <span class="skill-button">Static Timing Analysis</span>
-                                    <span class="skill-button">Methodology Design</span>
-                                    <span class="skill-button">Python and TCL Scripting for Automation</span>
-                                    <span class="skill-button">PrimeTime</span>
-                                    <span class="skill-button">Timing Convergence</span>
+                                    <span class="skill-button hardware">Physical Design</span>
+                                    <span class="skill-button hardware">Static Timing Analysis</span>
+                                    <span class="skill-button hardware">Methodology Design</span>
+                                    <span class="skill-button software">Python and TCL Scripting for Automation</span>
+                                    <span class="skill-button hardware">PrimeTime</span>
+                                    <span class="skill-button hardware">Timing Convergence</span>
                                 </div>
                             </div>
                         </div>

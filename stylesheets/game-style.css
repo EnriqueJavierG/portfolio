@@ -100,5 +100,129 @@ body {
     box-shadow: 0 2px #A7544C; /* Shadow disappears */
     transform: translateY(4px); /* Move down to cover shadow */
 }
+/* Base Skill Button Style */
+.skill-button {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    margin: 0.5em 0.25em;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white; /* Default text color */
+}
 
-/* #94DF84 <- Green*/
+/* Modifier for Hardware Skill Button */
+.skill-button.hardware {
+    background-color: #506AB6; /* Darker Blue Background */
+    border: 2px solid #6A95E1; /* Lighter Blue Outline */
+}
+.skill-button.hardware:hover {
+    background-color: #40579A; /* Even Darker Blue on Hover */
+}
+
+/* Modifier for AI Skill Button */
+.skill-button.ai {
+    background-color: #6E66A8; /* Darker Purple Background */
+    border: 2px solid #9889E3; /* Lighter Purple Outline */
+}
+.skill-button.ai:hover {
+    background-color: #5A518D; /* Even Darker Purple on Hover */
+}
+
+/* Modifier for Software Skill Button */
+.skill-button.software {
+    background-color: #A7544C; /* Darker Red Background */
+    border: 2px solid #E27674; /* Lighter Red Outline */
+}
+.skill-button.software:hover {
+    background-color: #8A413A; /* Even Darker Red on Hover */
+}
+
+/* Container for Skill Buttons */
+.skill-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+/* Hardware Icon */
+.skill-icon-hardware {
+    color: #6A95E1; /* Nintendo Blue */
+}
+
+/* AI Icon */
+.skill-icon-ai {
+    color: #9889E3; /* Nintendo Purple */
+}
+
+/* Software Icon */
+.skill-icon-software {
+    color: #E27674; /* Nintendo Red */
+}
+
+/* Gradient Styles with Standard Background-Clip */
+
+/* Gradient for Hardware and AI */
+.gradient-hardware-ai {
+    background: linear-gradient(45deg, #6A95E1, #9889E3);
+    color: white;
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Webkit for compatibility */
+    -webkit-text-fill-color: transparent;
+}
+.gradient-hardware-ai:hover {
+    background: linear-gradient(45deg, #506AB6, #6E66A8);
+}
+
+/* Gradient for Hardware and Software */
+.gradient-hardware-software {
+    background: linear-gradient(45deg, #6A95E1, #E27674);
+    color: white;
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Webkit for compatibility */
+    -webkit-text-fill-color: transparent;
+}
+.gradient-hardware-software:hover {
+    background: linear-gradient(45deg, #506AB6, #A7544C);
+}
+
+/* Gradient for AI and Software */
+.gradient-ai-software {
+    background: linear-gradient(45deg, #9889E3, #E27674);
+    color: white;
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Webkit for compatibility */
+    -webkit-text-fill-color: transparent;
+}
+.gradient-ai-software:hover {
+    background: linear-gradient(45deg, #6E66A8, #A7544C);
+}
+
+/* Gradient for Hardware, AI, and Software (All Three Areas) */
+.gradient-all-areas {
+    background: linear-gradient(45deg, #6A95E1, #9889E3, #E27674);
+    color: white;
+    background-clip: text; /* Standard property */
+    -webkit-background-clip: text; /* Webkit for compatibility */
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-button.all-areas {
+    background: linear-gradient(45deg, #506AB6, #6E66A8, #A7544C); /* Gradient from blue to purple to red */
+    border: 2px solid #DDE07C; /* Lighter Blue Outline */
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.skill-button.all-areas:hover {
+    background: linear-gradient(45deg, #40579A, #5A518D, #8A413A); /* Darker version of gradient on hover */
+    color: white;
+}
+
