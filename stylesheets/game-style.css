@@ -152,16 +152,31 @@ body {
 /* Hardware Icon */
 .skill-icon-hardware {
     color: #6A95E1; /* Nintendo Blue */
+    text-shadow: 
+        -1px -1px 0 #FFFFFF, /* Top-left */
+        1px -1px 0 #FFFFFF,  /* Top-right */
+        -1px 1px 0 #FFFFFF,  /* Bottom-left */
+        1px 1px 0 #FFFFFF;   /* Bottom-right */
 }
 
 /* AI Icon */
 .skill-icon-ai {
     color: #9889E3; /* Nintendo Purple */
+    text-shadow: 
+    -1px -1px 0 #FFFFFF, /* Top-left */
+    1px -1px 0 #FFFFFF,  /* Top-right */
+    -1px 1px 0 #FFFFFF,  /* Bottom-left */
+    1px 1px 0 #FFFFFF;   /* Bottom-right */
 }
 
 /* Software Icon */
 .skill-icon-software {
     color: #E27674; /* Nintendo Red */
+    text-shadow: 
+    -1px -1px 0 #FFFFFF, /* Top-left */
+    1px -1px 0 #FFFFFF,  /* Top-right */
+    -1px 1px 0 #FFFFFF,  /* Bottom-left */
+    1px 1px 0 #FFFFFF;   /* Bottom-right */
 }
 
 /* Gradient Styles with Standard Background-Clip */
@@ -226,3 +241,36 @@ body {
     color: white;
 }
 
+/* Hardware and AI Skill Button */
+.skill-button.hardware-ai {
+    background: linear-gradient(to right, #506AB6 50%, #9889E3 50%); /* Split blue and purple down the middle */
+    border: 2px solid #7C9DF2; /* Midway gradient color for border */
+}
+.skill-button.hardware-ai:hover {
+    background: linear-gradient(to right, #40579A 50%, #6E66A8 50%); /* Darker split colors on hover */
+}
+/* Hardware and Software Skill Button */
+.skill-button.hardware-software {
+    background: linear-gradient(to right, #506AB6 50%, #E27674 50%); /* Split blue and red down the middle */
+    border: 2px solid #C589A2; /* Mixed color for the border */
+}
+.skill-button.hardware-software:hover {
+    background: linear-gradient(to right, #40579A 50%, #A7544C 50%); /* Darker split colors on hover */
+}
+
+
+/* AI and Software Skill Button */
+.skill-button.ai-software {
+    background: linear-gradient(45deg, #6E66A8, #E27674); /* Gradient from purple to red */
+    border: 2px solid white; /* Mixed color for the border */
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.skill-button.ai-software:hover {
+    background: linear-gradient(45deg, #5A518D, #A7544C); /* Darker gradient on hover */
+    color: white;
+}
