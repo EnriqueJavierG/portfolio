@@ -8,7 +8,7 @@
     <!-- <link rel="stylesheet" href="../stylesheets/styles.css"> -->
     <link rel="stylesheet" href="../stylesheets/horizontal-timeline.css">
     <link rel="stylesheet" href="../stylesheets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/game-style.css">
 </head>
 <body class="gradient-custom-5">
     <nav id="header-nav" class="navbar navbar-expand-lg ">
@@ -23,10 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link text-light" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="../about_me/experiences-timeline.html">My Experience</a>
+                            <a class="nav-link text-light" href="../about_me/experiences-timeline.html">My Experience</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light active" href="../about_me/recognition-wall.html">Recognitions</a>
@@ -38,90 +38,83 @@
     </nav>
 
 
-    <h1>Software Projects</h1>
-    <div class="container-fluid py-5">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="horizontal-timeline">
-                    <ul class="list-inline items">
-                        <li class="list-inline-item items-list">
-                            <div class="px-4">
-                                <div class="badge bg-info">Big Data Analytics</div>
-                                <h5 class="pt-2">Toy Best Seller</h5>
-                                <p class="text-muted">Predict what toys are going to be best sellers using machine Learning</p>
-                                <div>
-                                    <a href="https://github.com/EnriqueJavierG/BigData-toy-dataset/blob/main/CIIC%205140%20Final%20Project.ipynb" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-primary btn-sm text-white">Read more</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-inline-item items-list">
-                            <div class="px-4">
-                                <div class=" badge bg-success">Web Design</div>
-                                <h5 class="pt-2">Quick Reports</h5>
-                                <p class="text-muted">App that can read data from dataloggers and create reports for clean room 
-                                    validation
-                                </p>
-                                <div>
-                                    <a href="https://github.com/EnriqueJavierG/Quickreports" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-primary btn-sm text-white">Read more</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-inline-item items-list">
-                            <div class="px-4">
-                                <div class=" badge bg-danger">Game Design</div>
-                                <h5 class="pt-2">Definitely Not Megaman</h5>
-                                <p class="text-muted">Re-created classic Megaman game using Java. Design levels and characters</p>
-                                <div>
-                                    <a href="https://github.com/EnriqueJavierG/-definitelynotmegaman" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-primary btn-sm text-white">Read more</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-inline-item items-list">
-                            <div class="px-4">
-                                <div class=" badge bg-danger">Game Design</div>
-                                <h5 class="pt-2">Poker Memory</h5>
-                                <p class="text-muted">Re-created the classic poker memory game. Test your memory in this simple game</p>
-                                <div>
-                                    <a href="https://github.com/EnriqueJavierG/PokerMemory" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-primary btn-sm text-white">Read more</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+    
+    <div class="container my-5">
+        <h1 class ="mb-4">Software Projects</h1>
+        <div class="row g-4">
+    
+            <!-- Big Data Analytics Card -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card text-center card-software w-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <div class="badge bg-info mb-2">Big Data Analytics</div>
+                        <h4 class="card-title">Toy Best Seller</h4>
+                        <p class="card-text">Predict what toys are going to be best sellers using machine learning.</p>
+                        <a href="https://github.com/EnriqueJavierG/BigData-toy-dataset/blob/main/CIIC%205140%20Final%20Project.ipynb" class="btn btn-primary btn-sm mt-auto text-white" target="_blank">Read more</a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="col-lg-12 gy-5">
-                <div class="horizontal-timeline">
-                    <ul class="list-inline items">
-                        <li class="list-inline-item items-list">
-                            <div class="px-4">
-                                <div class="badge bg-success">Web Design</div>
-                                <h5 class="pt-2">Car Dealer Backend</h5>
-                                <p class="text-muted">Created all data structures to have a working backend for car dealers</p>
-                                <div>
-                                    <a href="https://github.com/EnriqueJavierG/CarDealerProject" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-primary btn-sm text-white">Read more</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-inline-item items-list">
-                            <div class="px-4">
-                                <div class="badge bg-info">Computer Vision</div>
-                                <h5 class="pt-2">Eye Tracking</h5>
-                                <p class="text-muted">Created a simple eye tracker using MATLAB using classical computer vision techniques</p>
-                                <div>
-                                    <a href="https://github.com/EnriqueJavierG/CarDealerProject" data-mdb-button-init data-mdb-ripple-init
-                                        class="btn btn-primary btn-sm text-white">Read more</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+    
+            <!-- Web Design Card -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card text-center card-software w-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <div class="badge bg-success mb-2">Web Design</div>
+                        <h4 class="card-title">Quick Reports</h4>
+                        <p class="card-text">App that can read data from data loggers and create reports for clean room validation.</p>
+                        <a href="https://github.com/EnriqueJavierG/Quickreports" class="btn btn-primary btn-sm mt-auto text-white" target="_blank">Read more</a>
+                    </div>
                 </div>
             </div>
+    
+            <!-- Game Design Card (Definitely Not Megaman) -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card text-center card-software w-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <div class="badge bg-danger mb-2">Game Design</div>
+                        <h4 class="card-title">Definitely Not Megaman</h4>
+                        <p class="card-text">Re-created classic Megaman game using Java. Designed levels and characters.</p>
+                        <a href="https://github.com/EnriqueJavierG/-definitelynotmegaman" class="btn btn-primary btn-sm mt-auto text-white" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Game Design Card (Poker Memory) -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card text-center card-software w-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <div class="badge bg-danger mb-2">Game Design</div>
+                        <h4 class="card-title">Poker Memory</h4>
+                        <p class="card-text">Re-created the classic poker memory game. Test your memory in this simple game.</p>
+                        <a href="https://github.com/EnriqueJavierG/PokerMemory" class="btn btn-primary btn-sm mt-auto text-white" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Web Design Card (Car Dealer Backend) -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card text-center card-software w-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <div class="badge bg-success mb-2">Web Design</div>
+                        <h4 class="card-title">Car Dealer Backend</h4>
+                        <p class="card-text">Created all data structures to have a working backend for car dealers.</p>
+                        <a href="https://github.com/EnriqueJavierG/CarDealerProject" class="btn btn-primary btn-sm mt-auto text-white" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Computer Vision Card (Eye Tracking) -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card text-center card-software w-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
+                        <div class="badge bg-info mb-2">Computer Vision</div>
+                        <h4 class="card-title">Eye Tracking</h4>
+                        <p class="card-text">Created a simple eye tracker using MATLAB with classical computer vision techniques.</p>
+                        <a href="https://github.com/EnriqueJavierG/CarDealerProject" class="btn btn-primary btn-sm mt-auto text-white" target="_blank">Read more</a>
+                    </div>
+                </div>
+            </div>
+    
         </div>
     </div>
 </body>
